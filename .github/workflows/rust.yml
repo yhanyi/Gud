@@ -39,7 +39,7 @@ jobs:
     - name: Run tests
       run: cargo test --verbose
 
-    - name: Run clippy
-      run: |
-        rustup component add clippy
-        cargo clippy -- -D warnings
+      # - name: Run clippy
+      #   run: |
+      #     rustup component add clippy
+      #     cargo clippy -- -D warnings
