@@ -15,6 +15,12 @@ pub struct Repository {
     pub staging: HashMap<String, String>, // filename -> content hash
 }
 
+impl Default for Repository {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl Repository {
     pub fn new() -> Self {
         Repository {
