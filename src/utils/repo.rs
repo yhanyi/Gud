@@ -9,10 +9,10 @@ use std::path::Path;
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Repository {
-    current_commit: Option<String>,
-    commits: HashMap<String, Commit>,  // message -> commit data
-    objects: HashMap<String, Vec<u8>>, // hash -> content
-    staging: HashMap<String, String>,  // filename -> content hash
+    pub current_commit: Option<String>,
+    pub commits: HashMap<String, Commit>, // message -> commit data
+    pub objects: HashMap<String, Vec<u8>>, // hash -> content
+    pub staging: HashMap<String, String>, // filename -> content hash
 }
 
 impl Repository {
